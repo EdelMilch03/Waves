@@ -1,13 +1,14 @@
 extends Control
 
-@onready var start_button: Button = $VBoxContainer/StartButton
-@onready var options_button: Button = $VBoxContainer/OptionsButton
-@onready var ouit_button: Button = $VBoxContainer/OuitButton
+@onready var start_button: Button = $MainPanel/VBoxContainer/StartButton
+@onready var options_button: Button = $MainPanel/VBoxContainer/OptionsButton
+@onready var ouit_button: Button = $MainPanel/VBoxContainer/OuitButton
+
 
 func _ready():
-	$VBoxContainer/StartButton.pressed.connect(_on_start_pressed)
-	$VBoxContainer/OptionsButton.pressed.connect(_on_options_pressed)
-	$VBoxContainer/OuitButton.pressed.connect(_on_quit_pressed)
+	$MainPanel/VBoxContainer/StartButton.pressed.connect(_on_start_pressed)
+	$MainPanel/VBoxContainer/OptionsButton.pressed.connect(_on_options_pressed)
+	$MainPanel/VBoxContainer/OuitButton.pressed.connect(_on_quit_pressed)
 	
 
 #Start-Button
