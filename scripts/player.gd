@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 
+
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 var JUMP_VELOCITY : int = -300
@@ -44,5 +45,8 @@ func _handle_direction(direction):
 		animated_sprite.flip_h = true
 
 func die():
-	var game_over = load("res://scene/game_over.tscn") #gameover-szene laden
+	print ("player died")
+	var game_over = load("res://scene/game_over.tscn").instantiate() #gameover-szene laden
+	print("game over")
 	get_tree().current_scene.add_child(game_over) #in die aktuelle szene einfügen
+	get_tree().change_scene_to_file("res://scene/game_over.tscn")

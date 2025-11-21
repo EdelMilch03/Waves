@@ -14,6 +14,7 @@ extends Control
 
 
 func _ready():
+
 	$MainPanel/VBoxContainer/StartButton.pressed.connect(_on_start_pressed)
 	$MainPanel/VBoxContainer/OptionsButton.pressed.connect(_on_options_pressed)
 	$MainPanel/VBoxContainer/OuitButton.pressed.connect(_on_quit_pressed)

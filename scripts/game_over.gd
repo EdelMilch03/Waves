@@ -17,7 +17,7 @@ func _ready() -> void:
 
 func _on_retry_pressed():
 	get_tree().paused = false #pausierung aufheben
-	get_tree().reload_current_scene() #lädt die szene neu/Neu start
+	get_tree().change_scene_to_file("res://scene/world.tscn")
 
 
 func _on_mainmenu_pressed():
