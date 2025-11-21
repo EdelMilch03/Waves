@@ -42,3 +42,7 @@ func _handle_direction(direction):
 		animated_sprite.flip_h = false
 	elif direction < 0 :
 		animated_sprite.flip_h = true
+
+func die():
+	var game_over = load("res://scene/game_over.tscn") #gameover-szene laden
+	get_tree().current_scene.add_child(game_over) #in die aktuelle szene einfügen
