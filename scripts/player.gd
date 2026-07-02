@@ -4,7 +4,7 @@ extends CharacterBody2D
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
-var JUMP_VELOCITY : int = -300
+var JUMP_VELOCITY : int = -400
 
 var SPEED : int = 300
 
