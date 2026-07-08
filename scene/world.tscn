@@ -4495,7 +4495,7 @@ layer_3/tile_data = PackedInt32Array(-458761, 458757, 805306375, -393225, 458757
 layer_4/name = "Front"
 
 [node name="Player" parent="." unique_id=1344725710 instance=ExtResource("6_0tg4p")]
-position = Vector2(1326, -41)
+position = Vector2(-1, -31)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1525356810]
 position = Vector2(0, -8)
